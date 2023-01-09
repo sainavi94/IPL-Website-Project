@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL-2022</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq--9FfvtjHPH7Wx8qZAE45RmZdw9Rt-Bj_Q&usqp=CAU"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6f5013579e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="head-container">
+        <div id="head-right">
+          <img
+            src=" https://cdn.storyasset.link/rDoQLC7Q6Ge2nxiqZ1urXiiRSIA3/tata-ipl-logo-indya-talks-sanket-savaliya-removebg-preview-ms-qeladdzjmt.png"
+            alt="logo here"
+            id="logo"
+          />
+          <a href="./index.html">
+            <button id="home-button" class="add-button">Home</button></a
+          >
+          <a href="#container_teams">
+            <button id="home-button" class="add-button">Teams</button></a
+          >
+          <a href="https://sports.ndtv.com/ipl-2022/news">
+            <button id="home-button" class="add-button">IPLNews</button></a
+          >
+        </div>
+        <div id="head-left">
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Enter team Name...   " />
+            <div class="autocom-box"></div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+          </div>
+          <button
+            id="add-team-button"
+            class="add-button"
+            onclick="addteamclicked()"
+          >
+            Add Team
+          </button>
+          <button
+            id="add-player-button"
+            class="add-button"
+            onclick="addPlayerClicked()"
+          >
+            Add Player
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+
+        <div class="slide">
+          <img
+            src="https://crictips.com/wp-content/uploads/2022/02/eng-banner-2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide first">
+          <img
+            src="https://dainikshivsangram.com/wp-content/uploads/2022/03/TATA-IPL-2022.png"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://www.bigmediakart.com/wp-content/uploads/2021/02/IPL-Dream-11-new-1024x576-1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2021/11/dmelm0938-1638282475.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <div class="banner">
+      <p class="about">
+        If you want to learn more about Indian Premier League (IPL) <br />
+        , Click the Button<a
+          href="https://en.wikipedia.org/wiki/2022_Indian_Premier_League">
+          <button class="learn-button">Learn</button></a>
+      </p>
+    </div>
+
+    <h1 id="slogan">2022 IPL teams</h1>
+    <div id="first-main">
+      <div id="container_teams"></div>
+    </div>
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a
+          ><a href="#"><i class="fa-brands fa-square-snapchat"></i></a
+          ><a href="#"><i class="fa-brands fa-twitter"></i></a
+          ><a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p class="copyright">JS © 2022</p>
+      </footer>
+    </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
